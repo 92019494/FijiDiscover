@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FijiDiscover.Views.ActivityPage"
+    Title="Activities">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image HorizontalOptions="Center" HeightRequest="200" WidthRequest="200" Source="https://c7.uihere.com/files/470/1004/22/flag-of-fiji-national-flag-fijian-village-flag.jpg"/>
+            <Label Text="Name" HorizontalTextAlignment="Center"    Style="{DynamicResource TitleStyle}"/>
+            <Label Text="Description" HorizontalTextAlignment="Center"    Style="{DynamicResource TitleStyle}"/>
+            <Label Text="Location" HorizontalTextAlignment="Center"    Style="{DynamicResource TitleStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

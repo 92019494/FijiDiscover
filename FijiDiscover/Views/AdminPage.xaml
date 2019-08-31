@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FijiDiscover.Views.AdminPage"
+    Title="Admin">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="username"
+                   Style="{DynamicResource TitleStyle}"
+                   FontAttributes="Bold"
+                   Text="Username"
+                   Margin="0,60,0,0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <Entry x:Name="usernameEntry"
+                   Placeholder="Enter username"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <Label x:Name="password"
+                   Style="{DynamicResource TitleStyle}"
+                   FontAttributes="Bold"
+                   Text="Password"
+                   Margin="0,40,0,0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <Entry x:Name="passwordEntry"
+                   Placeholder="Enter password"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <Button x:Name="SignInButton"
+                    FontSize="Medium"
+                    Margin="0,50,0,0"
+                    Text="Sign In"
+                    HorizontalOptions="Center"
+                    Clicked="SignInButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

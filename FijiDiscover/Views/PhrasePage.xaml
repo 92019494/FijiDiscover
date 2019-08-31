@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FijiDiscover.Views.PhrasePage"
+    Title="Phrases">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <ListView  HasUnevenRows="true"
+                       x:Name="MyListView"
+                       ItemsSource="{Binding Phrases}"
+                       SelectionMode="None"
+                       CachingStrategy="RecycleElement">
+                <ListView.Header>
+                    <StackLayout>
+                        <Label Text="Fijian Phrase"
+                               TextColor="Blue"
+                               FontSize="Large"
+                               FontAttributes="Bold"
+                               Margin="0,10,0,0"
+                               HorizontalOptions="Center" />
+                        <Label Text="English Phrase"
+                               TextColor="Green"
+                               FontSize="Large"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,10"
+                               HorizontalOptions="Center" />
+                        <BoxView  
+                                   HorizontalOptions="FillAndExpand"
+                                   HeightRequest="1"
+                                   Margin="0,0,0,10"
+                                   
+                                   Color="LightGray"></BoxView>
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding PhraseFijian}"
+                                       TextColor="Blue"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Margin="40,10,0,0" />
+
+                                <Label Text="{Binding PhraseEnglish}"
+                                       TextColor="Green"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Margin="40,0,0,10" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
