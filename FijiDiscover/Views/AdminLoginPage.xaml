@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FijiDiscover.Views.AdminLoginPage"
+    Title="Log In">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="username"
+                   Style="{DynamicResource TitleStyle}"
+                   FontAttributes="Bold"
+                   Text="Email"
+                   TextColor="CadetBlue"
+                   Margin="50,60,0,0"
+                   HorizontalOptions="Start" />
+            <Entry x:Name="emailEntry"
+                   Margin="50,0,50,0"
+                   Placeholder="Enter email"
+                   HorizontalOptions="FillAndExpand" />
+            <Label x:Name="password"
+                   Style="{DynamicResource TitleStyle}"
+                   FontAttributes="Bold"
+                   Text="Password"
+                   TextColor="CadetBlue"
+                   Margin="50,40,0,0"
+                   HorizontalOptions="Start" />
+            <Entry x:Name="passwordEntry"
+                   Margin="50,0,50,0"
+                   IsPassword="True"
+                   Placeholder="Enter password"
+                   HorizontalOptions="FillAndExpand" />
+            <Label x:Name="helpText"
+                   Text="Please enter a valid email and password"
+                   TextColor="Transparent"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,10"/>
+            <Button x:Name="SignInButton"
+                    FontSize="Medium"
+                    Margin="0,10,0,0"
+                    Text="Sign In"
+                    TextColor="White"
+                    BackgroundColor="CadetBlue"
+                    HorizontalOptions="Center"
+                    Clicked="SignInButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

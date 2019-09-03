@@ -46,7 +46,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:AdminPage />
+                <views:AdminLoginPage />
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>

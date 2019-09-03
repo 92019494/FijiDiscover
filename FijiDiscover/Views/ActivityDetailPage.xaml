@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FijiDiscover.Views.ActivityDetailPage"
+    Title="Edit Activity">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Update Activity Details"
+                       TextColor="CadetBlue"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalOptions="Center"
+                       Margin="0,40,0,0" />
+                <Label x:Name="helpText"
+                       Text="Please make sure all fields are entered"
+                       FontAttributes="Bold"
+                       FontSize="Small"
+                       TextColor="Transparent"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,0" />
+                <Label
+                    Style="{DynamicResource TitleStyle}"
+                    FontAttributes="Bold"
+                    Text="Image URL"
+                    TextColor="CadetBlue"
+                    Margin="50,5,0,0"
+                    HorizontalOptions="Start" />
+                <Entry x:Name="sourceURL"
+                       Text="{Binding SourceURL}"
+                       Placeholder="Enter image url"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="50,0,50,0" />
+                <Label
+                    Style="{DynamicResource TitleStyle}"
+                    FontAttributes="Bold"
+                    Text="Name"
+                    TextColor="CadetBlue"
+                    Margin="50,5,0,0"
+                    HorizontalOptions="Start" />
+                <Entry x:Name="name"
+                       Text="{Binding Name}"
+                       Placeholder="Enter activity name"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="50,0,50,0" />
+                <Label
+                    Style="{DynamicResource TitleStyle}"
+                    FontAttributes="Bold"
+                    Text="Location"
+                    TextColor="CadetBlue"
+                    Margin="50,5,0,0"
+                    HorizontalOptions="Start" />
+                <Entry x:Name="location"
+                       Text="{Binding Location}"
+                       Placeholder="Enter activity location"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="50,0,50,0" />
+                <Label
+                    Style="{DynamicResource TitleStyle}"
+                    FontAttributes="Bold"
+                    Text="Description"
+                    TextColor="CadetBlue"
+                    Margin="50,5,0,0"
+                    HorizontalOptions="Start" />
+                <Entry x:Name="description"
+                       Text="{Binding Description}"
+                       Placeholder="Enter activity description"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="50,0,50,0" />
+                 <Button Text="Update Activity"
+                        BackgroundColor="CadetBlue"
+                        TextColor="White"
+                        Clicked="UpdateActivityButtonClicked"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,0" />
+
+                <Button Text="Delete Activity"
+                        BackgroundColor="CadetBlue"
+                        TextColor="White"
+                        Clicked="DeleteActivityButtonClicked"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,0" />
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

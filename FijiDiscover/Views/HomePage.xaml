@@ -5,9 +5,30 @@
     x:Class="FijiDiscover.Views.HomePage"
     Title="Home">
     <ContentPage.Content>
-        <StackLayout>
-            <Image HorizontalOptions="Center" HeightRequest="200" WidthRequest="200" Source="https://c7.uihere.com/files/470/1004/22/flag-of-fiji-national-flag-fijian-village-flag.jpg"/>
-            <Image HorizontalOptions="Center" HeightRequest="200" WidthRequest="400" Source="https://c7.uihere.com/files/470/1004/22/flag-of-fiji-national-flag-fijian-village-flag.jpg"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Image HorizontalOptions="FillAndExpand"
+                       x:Name="logoImage"
+                       Source="https://blog.ihg.com/wp-content/uploads/2015/04/Fiji-1000x500.png" />
+                 <Label Text="Fiji Discover"
+                       TextColor="CadetBlue"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       Margin="20,10,20,0"
+                       HorizontalTextAlignment="Center"
+                       />
+                <Label Text="This application will teach you all the phrases you need to know while you're in Fiji. We will also keep you updated with plenty of activities to do while you are there."
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       Margin="20,5,20,10"
+                       />
+                <Image  HorizontalOptions="FillAndExpand"
+                        x:Name="coverImage"
+                        Source="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/1d/82/45.jpg" />
+               
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
