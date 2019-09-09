@@ -37,7 +37,7 @@
                                    HorizontalOptions="Center"
                                    HorizontalTextAlignment="Center"
                                    FontSize="Large"
-                                   Margin="20,0,20,20" />
+                                   Margin="80,0,80,20" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
