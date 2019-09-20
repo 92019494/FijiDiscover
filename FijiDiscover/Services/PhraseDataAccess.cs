@@ -20,123 +20,89 @@ namespace FijiDiscover.Services
 
         public PhraseDataAccess()
         {
+            
             database = DependencyService.Get<IDatabaseConnection>().DbConnection();
             database.CreateTable<Phrase>();
             this.Phrases = new ObservableCollection<Phrase>(database.Table<Phrase>());
             if (this.Phrases.Count < 1)
             {
+                DeleteAllPhrases();
                 AddPhrases();
                 SaveAllPhrases();
 
             }
         }
 
-        public void AddNewPhrase()
-        {
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Bula",
-                PhraseEnglish = "Hello"
-               
-            });
-        }
-
         public void AddPhrases()
         {
             this.Phrases.Add(new Phrase
             {
-                PhraseFijian = "Bula",
-                PhraseEnglish = "Hello"
+                PhraseFijian = "Bula Vinaka",
+                PhraseEnglish = "Hello",
+                VoiceClip = "bul.mp3"
 
             });
             this.Phrases.Add(new Phrase
             {
-                PhraseFijian = "Vinaka",
-                PhraseEnglish = "Thank You"
+                PhraseFijian = "Tou lai kana",
+                PhraseEnglish = "Let's eat",
+                VoiceClip = "tou.mp3"
+
+            });
+            this.Phrases.Add(new Phrase
+            {
+                PhraseFijian = "Loloma yani",
+                PhraseEnglish = "Send my love/regards",
+                VoiceClip = "lol.mp3"
+
+            });
+            this.Phrases.Add(new Phrase
+            {
+                PhraseFijian = "Iko Hale cava?",
+                PhraseEnglish = "What Hale do you live in?",
+                VoiceClip = "iko.mp3"
+
+            });
+            this.Phrases.Add(new Phrase
+            {
+                PhraseFijian = "Kerekere waraki au",
+                PhraseEnglish = "Please wait for me",
+                VoiceClip = "ker.mp3"
+
+            });
+            this.Phrases.Add(new Phrase
+            {
+                PhraseFijian = "Iko lako i vei?",
+                PhraseEnglish = "Where are you going?",
+                VoiceClip = "ikoTwo.mp3"
+
+            });
+            this.Phrases.Add(new Phrase
+            {
+                PhraseFijian = "Iko bulabula vinaka tiko?",
+                PhraseEnglish = "Are you feeling well?",
+                VoiceClip = "ikoThree.mp3"
 
             });
             this.Phrases.Add(new Phrase
             {
                 PhraseFijian = "Moce",
-                PhraseEnglish = "Goodbye"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Yadra",
-                PhraseEnglish = "Good Morning"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Kerekere",
-                PhraseEnglish = "Please"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Vacava tiko?",
-                PhraseEnglish = "How are you?"
+                PhraseEnglish = "Goodbye",
+                VoiceClip = "moc.mp3"
 
             });
             this.Phrases.Add(new Phrase
             {
                 PhraseFijian = "Au domoni iko",
-                PhraseEnglish = "I love you"
+                PhraseEnglish = "I love you",
+                VoiceClip = "aud.mp3"
 
             });
             this.Phrases.Add(new Phrase
             {
-                PhraseFijian = "Lo",
-                PhraseEnglish = "Yes"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Sega",
-                PhraseEnglish = "No"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Sega la neqa",
-                PhraseEnglish = "No worries"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Sota tale",
-                PhraseEnglish = "See you later"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Dabe ira",
-                PhraseEnglish = "Sit down"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Lako mai ke",
-                PhraseEnglish = "Come here"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Mai kana",
-                PhraseEnglish = "Come and eat"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Baleta?",
-                PhraseEnglish = "Why?"
-
-            });
-            this.Phrases.Add(new Phrase
-            {
-                PhraseFijian = "Vainui vinaka e nomu volau",
-                PhraseEnglish = "Have a safe journey"
+                PhraseFijian = "Vinaka vakalevu",
+                PhraseEnglish = "Thank you",
+                VoiceClip = "vin.mp3"
 
             });
         }
@@ -186,23 +152,7 @@ namespace FijiDiscover.Services
         }
 
 
-
-        public int DeletePhrases(Phrase phraseInstance)
-        {
-            var id = phraseInstance.Phrase_id;
-            if (id != 0)
-            {
-                lock (collisionLock)
-                {
-                    database.Delete<Activity>(id);
-                }
-            }
-            this.Phrases.Remove(phraseInstance);
-            return id;
-        }
-
-
-        public void DeleteAllActivities()
+        public void DeleteAllPhrases()
         {
             lock (collisionLock)
             {

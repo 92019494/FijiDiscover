@@ -53,6 +53,22 @@ namespace FijiDiscover.Models
             }
         }
 
+        private string voiceClip;
+        [NotNull]
+
+        public string VoiceClip
+        {
+            get
+            {
+                return voiceClip;
+            }
+            set
+            {
+                this.voiceClip = value;
+                OnPropertyChanged(nameof(VoiceClip));
+            }
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

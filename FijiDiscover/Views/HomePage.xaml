@@ -9,7 +9,7 @@
             <StackLayout>
                 <Image HorizontalOptions="FillAndExpand"
                        x:Name="logoImage"
-                       Source="https://blog.ihg.com/wp-content/uploads/2015/04/Fiji-1000x500.png" />
+                       Source="logo.png" />
                  <Label Text="Fiji Discover"
                        TextColor="CadetBlue"
                        FontSize="Large"
@@ -25,7 +25,7 @@
                        />
                 <Image  HorizontalOptions="FillAndExpand"
                         x:Name="coverImage"
-                        Source="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/1d/82/45.jpg" />
+                        Source="activity3.jpg" />
                
 
             </StackLayout>

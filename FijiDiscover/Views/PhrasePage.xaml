@@ -10,7 +10,7 @@
             <ListView  HasUnevenRows="true"
                        x:Name="MyListView"
                        ItemsSource="{Binding Phrases}"
-                       SelectionMode="None"
+                       ItemTapped="Handle_ItemTapped"
                        CachingStrategy="RecycleElement">
                 <ListView.Header>
                     <StackLayout>
@@ -24,14 +24,19 @@
                                TextColor="DarkBlue"
                                FontSize="Large"
                                FontAttributes="Bold"
-                               Margin="0,0,0,10"
+
                                HorizontalOptions="Center" />
-                        <BoxView  
-                                   HorizontalOptions="FillAndExpand"
-                                   HeightRequest="1"
-                                   Margin="0,0,0,10"
-                                   
-                                   Color="LightGray"></BoxView>
+                        <Label
+                               Text="Click on a list item to hear the fijian phrase"
+                               TextColor="Black"
+                               FontSize="Medium"
+                               Margin="0,0,0,10"
+                               HorizontalOptions="Center"/>
+                        <BoxView
+                            HorizontalOptions="FillAndExpand"
+                            HeightRequest="1"
+                            Margin="0,0,0,10"
+                            Color="LightGray"></BoxView>
                     </StackLayout>
                 </ListView.Header>
                 <ListView.ItemTemplate>
@@ -49,6 +54,9 @@
                                        FontSize="Medium"
                                        FontAttributes="Bold"
                                        Margin="40,0,0,10" />
+       
+
+
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
