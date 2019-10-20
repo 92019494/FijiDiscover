@@ -19,9 +19,9 @@ Mobile app should:
 - use consistent styling for all pages. You should select page layouts that are the most appropriate for the information.
 - have its navigation set up. 
 
-<img align="left" src="images/home.png" width="300" height="600">
-<img align="left" src="images/phrase.png" width="300" height="600">
-<img align="left" src="images/admin.png" width="300" height="600">
-<img align="left" src="images/login.png" width="300" height="600">
-<img align="left" src="images/activity.png" width="300" height="600">
-<img align="left" src="images/add activ.png" width="300" height="600">
+<img align="left" src="Images/home.png" width="250" height="500">
+<img align="left" src="Images/phrase.png" width="250" height="500">
+<img align="left" src="Images/admin.png" width="250" height="500">
+<img align="left" src="Images/login.png" width="300" height="600">
+<img align="left" src="Images/activity.png" width="300" height="600">
+<img align="left" src="Images/add activ.png" width="300" height="600">
