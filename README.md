@@ -3,7 +3,7 @@
 This was a project I done while studying. It is a mobile app built with Xamarin
 The requirements were just for an android version
 
-Specific Project Requirements:
+Specific Project Requirements - 
 Mobile app should:
 - be implemented in Xamarin.Android or Xamarin.Forms.
 - connect to a database containing information about the activities, sites to visit and common phrases.
@@ -16,6 +16,6 @@ Mobile app should:
   - Administration page – allow the administrator to add new activities to the Activities.db3 database. 
     Each activity should have, at a minimum, a description, photo and location.
     
-- use consistent styling for all pages.You should select page layouts that are the most appropriate for the information.
+- use consistent styling for all pages. You should select page layouts that are the most appropriate for the information.
 - have its navigation set up. 
 
