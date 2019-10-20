@@ -22,6 +22,7 @@ Mobile app should:
 <img align="left" src="Images/home.png" width="250" height="440">
 <img align="left" src="Images/phrase.png" width="250" height="440">
 <img align="left" src="Images/admin.png" width="250" height="440">
+<br>
 <img align="left" src="Images/login.png" width="250" height="440">
 <img align="left" src="Images/activity.png" width="250" height="440">
 <img align="left" src="Images/add activ.png" width="250" height="440">
