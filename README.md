@@ -1,6 +1,6 @@
 # FijiDiscover
 
-This was a project I done while studying. It is a mobile app built with Xamarin
+It is a mobile app built with Xamarin
 The requirements were just for an android version
 
 Specific Project Requirements - 
