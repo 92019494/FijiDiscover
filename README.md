@@ -1,7 +1,6 @@
 # FijiDiscover
 
-It is a mobile app built with Xamarin
-The requirements were just for an android version
+This is an android mobile app built with Xamarin: 
 
 Specific Project Requirements - 
 Mobile app should:
