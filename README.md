@@ -15,8 +15,8 @@ Mobile app should:
   - Administration page – allow the administrator to add new activities to the Activities.db3 database. 
     Each activity should have, at a minimum, a description, photo and location.
     
-- use consistent styling for all pages. You should select page layouts that are the most appropriate for the information.
-- have its navigation set up. 
+- use consistent styling for all pages. You should select page layouts that are the most appropriate for the information
+- have its navigation set up
 
 <img align="left" src="Images/home.png" width="250" height="440">
 <img align="left" src="Images/phrase.png" width="250" height="440">
