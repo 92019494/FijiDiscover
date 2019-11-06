@@ -1,7 +1,7 @@
 # FijiDiscover
 
 This is an android mobile app built with Xamarin: 
-
+ 
 Specific Project Requirements - 
 Mobile app should:
 - be implemented in Xamarin.Android or Xamarin.Forms.
